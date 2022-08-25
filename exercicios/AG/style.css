@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* PALETA DE CORES 
+    #FAF5BB
+    #F2C53D
+    #BF8C2C
+    #8C8C8C
+    #0D0D0D
+*/
+* {
+    font-family:'Courier New', Courier, monospace;
+}
+
+Body {
+    margin: auto;
+}
+
+h1 {
+    background-image: linear-gradient(to right, #bf8c28, #f2c53d, #faf5bb);
+}

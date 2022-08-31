@@ -5,14 +5,79 @@
     src: url('../fontes/comforter-regular.ttf') format('truetype');
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;    
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;  
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: lightgreen;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
 
 
+section.normal {
+    background-color: white;
+    color: black;
+}
 
+section.imagem {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
 
+section.imagem > p {
+    background-color: rgba(17, 17, 17, 0.493);
+    width: 350px;
+}
 
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
 
+footer a:hover {
+    text-decoration: underline;
+    color: lightskyblue;
+}
 
 .meulogo {
     font-family: meulogo, monospace;
     font-size: 1.5em;
+    font-weight: 100;
 }

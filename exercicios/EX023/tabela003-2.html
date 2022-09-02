@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td {
+            border: 2px solid black;
+            width: 200px;
+            height: 50px;
+        }
+
+        pre {
+            font-family: monospace;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células em Linhas</h1>
+    <table>
+        <tr>
+            <td rowspan="4">Para termos o <strong>este</strong> resultado Usamos dentro da tag &lt;td&gt; a comando [rowspan=" "]</td>
+            <td></td>
+            <td></td>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <hr>
+    <pre>
+        &lt;tr&gt;
+             &lt;td rowspan="4"&gt; &lt;/td&gt;
+             &lt;td&gt; &lt;/td&gt;
+             &lt;td&gt; &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+             &lt;td rowspan="2"&gt; &lt;/td&gt;
+             &lt;td&gt; &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+             &lt;td&gt; &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+             &lt;td&gt; &lt;/td&gt;
+             &lt;td&gt; &lt;/td&gt;
+        &lt;/tr&gt;
+    </pre>
+    <p><a href="tabela003.html">PREV PAGE</a></p>
+
+</body>
+</html>

@@ -44,5 +44,7 @@ margin: 10px;
 .etq {
     display: inline-block;
     min-width: 95px;
-    text-align: right;
+    text-align: center;
+    background-color: black;
+    color: white;
 }

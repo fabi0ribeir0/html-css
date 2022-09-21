@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Teste de Formulário</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur quidem dicta dolorem unde. Exercitationem, modi placeat eum facere doloribus molestias, provident veniam itaque tempora delectus iusto perspiciatis velit aut.
+            </p>
+        </header>
+        <form action="cadastro.php" method="post">
+            <fieldset id="dp">
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <fieldset id="sex">
+                        <legend>Sexo</legend>
+                        <input type="radio" name="sexo" id="im">
+                        <label for="im">Masculino</label>
+                        <input type="radio" name="sexo" id="if">
+                        <label for="if">Femenino</label>
+                    </fieldset>
+                </p>
+                <p>
+                    <div class="etq"><label for="inome">Nome</label></div>
+                    <input type="text" name="nome" id="inome" required size="40">
+                </p>
+                <p>
+                    <div class="etq"><label for="isob">Sobrenome</label></div>
+                    <input type="text" name="sob" id="isob" required size="40">
+                </p>
+                <p>
+                    <div class="etq"><label for="idata">Nascimento</label></div>
+                    <input type="date" name="data" id="idata" required size="40">
+                </p>
+                <p>
+                    <div class="etq"><label for="inatu">Naruralidade</label></div>
+                    <input type="text" name="natu" id="inatu" size="40" required placeholder="Brasileiro">
+                </p>
+                <p>
+                    <div class="etq"><label for="imail">E-MAIL</label></div>
+                    <input type="email" name="mail" id="imail" required placeholder="seuemail@dominio.com" size="40">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+        
+</body>
+</html>

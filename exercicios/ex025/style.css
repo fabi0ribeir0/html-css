@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: aqua;
+}
+
+header {
+    padding-bottom: 30px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+header > h1 {
+        margin-top: 0px;
+        text-align: center;
+        padding-top: 30px;
+}
+
+header > p {
+    margin: auto;
+    text-align: justify;
+    max-width: 60%;
+}
+
+main {
+    margin: auto;
+    background-color: white;
+    max-width: 1000px;
+}
+
+fieldset#sex > label {
+    padding-right: 20px;
+}
+
+#dp {
+margin: 10px;
+}
+
+.etq {
+    display: inline-block;
+    min-width: 95px;
+    text-align: right;
+}

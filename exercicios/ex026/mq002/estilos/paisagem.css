@@ -1,3 +1,7 @@
 @charset "UTF-8";
 
 /* TELAS NA HORIZONTAL, CELULAR DEITADO (landscape) */
+
+body {
+    background: url(../../imagens/cev-landscape.jpg) left bottom no-repeat fixed;
+}

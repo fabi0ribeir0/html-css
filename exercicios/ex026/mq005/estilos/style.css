@@ -1,11 +1,103 @@
 @charset "UTF-8";
 
 * {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+#burg {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#burg:hover {
+    background-color: white;
+    color: black;
+}
+
+html, body {
     background-color: lightgrey;
+}
+
+header {
+    background-color: light grey;       
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;    
+}
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: 2px solid grey;
+}
+
+menu a:hover {
+    background-color: grey;
+}
+
+main {
+    max-width: 900px;
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10PX;
+    padding: 10px;
+    border-radius: 10PX;    
+}
+
+article h2 {
+    padding-bottom: 20px;
+    text-indent: 30px;
+}
+
+article p {
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.5em;
+    margin-bottom: 10px;
 }

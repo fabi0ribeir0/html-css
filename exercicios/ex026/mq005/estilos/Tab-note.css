@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#burg {
+    display: none;
+}
+
+#itens {
+    display: block;
+}
+
+
+menu li {
+    display: inline-block;
+}

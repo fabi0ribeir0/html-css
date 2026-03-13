@@ -1,25 +1,67 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usando API</title>
-    <link rel="stylesheet" href="style.css">
+const vlrTotal = [Proposta.Total de Produtos];
+const formaPgto = "[Proposta.Forma de Pagamento]".toUpperCase();
+const parcelas = "[Proposta.Quantidade de Parcelas]".toUpperCase();
+const criador = "[Proposta.Criador]".toUpperCase();
+const diretorRegional = "[Criador.Regional]".toUpperCase();
+const produtosJson = "[Proposta.JSON vínculos]".toUpperCase();
 
-</head>
-<body>
-
-    <div class="title">
-        <h1>Listagem de PKM</h1>
-        <h2>Testando API</h2>
-    </div>
-    <div class="box">
-        <p><a class="botao" href="">Subs</a></p>
-    </div>
-
-    <div>
-        
-    </div>
-
-</body>
-</html>
+if([Proposta.Proposta válida?] == false){
+  "Proposta desabilitada"
+} else {
+  // 🚀 NOVA REGRA PARA AMOSTRA
+  if(parcelas.includes("AMOSTRA")){
+    "Pedido de amostra"
+  } else {
+    if([Proposta.Proposta de licitação?] == true){
+      "Proposta de licitação"
+    } else {
+      if(criador.includes("PAULA GIACOMITTI GOES")){
+        ""
+      } else {
+        if("[Proposta.Verificador promoção KICKOFF]".includes("Participando promoção")){
+          if(!parcelas.includes("A VISTA") && !parcelas.includes("1X") && !parcelas.includes("2X") && !parcelas.includes("3X") && !parcelas.includes("4X") && !parcelas.includes("5X") && !parcelas.includes("6X") && !parcelas.includes("7X") && !parcelas.includes("8X") && !parcelas.includes("9X") && !parcelas.includes("10X") && !parcelas.includes("11X") && !parcelas.includes("12X")){
+            "Precisa de aprovação"
+          } else {
+            ""
+          }
+        } else {
+          if("[Proposta.Proposta de importação?]" === "true" || formaPgto == "FINANCIAMENTO BANCÁRIO"){
+            "Sem necessidade"
+          } else {
+            if(!criador.includes("DUPLICADOR DE DOCUMENTOS")){
+              if(vlrTotal < 599){
+                if(parcelas !== "A VISTA" || !formaPgto.includes("DEPOSITO")){
+                  "Precisa de aprovação"
+                }
+              } else {
+                if(vlrTotal >= 600 && vlrTotal < 5000){
+                  if(parcelas !== "A VISTA" && parcelas !== "1X (30 DIAS)"){
+                    "Precisa de aprovação"
+                  }
+                } else {
+                  if(vlrTotal >= 5000 && vlrTotal < 10000){
+                    if(parcelas !== "A VISTA" && parcelas !== "1X (30 DIAS)" && parcelas !== "2X"){
+                      "Precisa de aprovação"
+                    }
+                  } else {
+                    if(parcelas !== "A VISTA" && parcelas !== "1X (30 DIAS)" && parcelas !== "2X" && parcelas !== "3X"){
+                      if(parcelas == "4X" || parcelas == "5X"){
+                        if(diretorRegional == "LUIZ MICHEL NETO" || diretorRegional == "SERGIO KIST"){
+                          "Precisa de aprovação Regional"
+                        } else {
+                          "Precisa de aprovação"
+                        }
+                      } else {
+                        "Precisa de aprovação"
+                      }
+                    } 
+                  } 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
